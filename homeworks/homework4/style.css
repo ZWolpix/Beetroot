@@ -1,0 +1,28 @@
+.wrapper {
+    width: 759px;
+    margin: 0 auto;
+}
+h1 {
+    text-align: center;
+    background-color: #A52A2A;
+    color: #ffffff;
+    font-size: 32px;
+}
+p {
+    font-size: 18px;
+}
+footer {
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+#cars {
+    text-align: center;
+}
+#dash {
+    border: dashed;
+}
+a {
+    text-decoration: none;
+}
