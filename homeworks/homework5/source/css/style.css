@@ -29,10 +29,10 @@ footer {
 
 h2 {
   font-size: 20px;
-  line-height: 24px;
   font-weight: normal;
   margin-top: 50px;
   font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
 }
 
 a {
