@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100%;
+}
+
 .wrapper {
   background-color: white;
   padding: 56px 345px 64px 346px;
@@ -42,10 +46,14 @@
 }
 
 .lineDiv {
+  width: 90%;
+  display: inline-block;
+  text-align: center;
+}
+
+.descr {
   display: inline-block;
   width: 33.33%;
-  text-align: center;
-  padding: 0 50px;
 }
 
 p {
