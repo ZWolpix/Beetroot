@@ -35,6 +35,7 @@ padding: 0;
 li {
   list-style-type: none;
   text-align: left;
+  border: 3px solid transparent;
   }
 
 .layout-buttons {
@@ -79,9 +80,9 @@ li:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
-
 }
-input[type="checkbox"]:checked + label {
+
+input[type="checkbox"]:checked + span {
   text-decoration: line-through;
   color: #A3A0B4;
 }
