@@ -35,15 +35,11 @@ padding: 0;
 li {
   list-style-type: none;
   text-align: left;
-  padding-left: 2%;
   }
 
-/*input[type="checkbox"] + label {
-  width: 100%;
-  line-height: 62px;
-}*/
-
 .layout-buttons {
+  padding-left: 2%;
+  width: 100%;
   line-height: 62px;
   font-size: 26px;
   color: white;
@@ -83,12 +79,13 @@ li:hover {
   width: 18px;
   height: 18px;
   cursor: pointer;
+
 }
 input[type="checkbox"]:checked + label {
   text-decoration: line-through;
   color: #A3A0B4;
 }
 
-input[type="checkbox"]:active + label {
+label:active {
 background-color: tomato;
 }
