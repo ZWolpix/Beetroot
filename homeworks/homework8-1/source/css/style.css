@@ -42,28 +42,25 @@ h1 {
 
 .wrapper {
   text-align: center;
-  margin: 0 15% 138px;
+  margin: 0 10% 138px;
   font-size: 0;
   letter-spacing: 0.025em;
-  background-color: #f7f7f7;
+  display: inline-block;
+  width: 80%;
 }
 
 .descr {
   border: 1px solid #ececec;
   display: inline-block;
   width: 25%;
-  padding: 0 38px 84px 34px;
+  padding: 0 38px 0 34px;
   color: black;
+  background-color: #f7f7f7;
 }
 
-.icon_wrapper {
-  display: inline-block;
-  width: 72px;
-  height: 72px;
-  text-align: center;
-  margin: 54px 0 38px;
+i {
   font-size: 70px;
-  font-weight: 200;
+  margin: 54px 0 40px;
 }
 
 h2 {
@@ -71,14 +68,16 @@ h2 {
   font-size: 21px;
   line-height: 24px;
   font-weight: normal;
-  margin: 20px 0 22px 0;
   text-transform: uppercase;
+  display: inline-block;
 }
 
 .text {
   font-family: "PTSans", sans-serif;
   font-weight: normal;
   font-size: 14px;
+  display: block;
+  margin: 32px 0 35%;
 }
 
 .descr:hover {
