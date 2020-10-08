@@ -72,7 +72,6 @@ ul {
     width: 100%;
     padding-left: 0;
     text-decoration: none;
-    width: 590px;
     margin-top: 36px;
     font-family: 'Roboto', sans-serif;
 }
@@ -81,7 +80,7 @@ li {
     display: inline-block;
     list-style-type: none;
     font-size: 17px;
-    width: 98px;
+    width: 12.5%;
     text-align: center;
 }
 
@@ -141,50 +140,50 @@ h1 {
     padding-left: 60px;
 }
 
-.squere {
+.square {
     height: 19px;
     width: 19px;
     position: absolute;
     display: inline-block;
 }
 
-.squere:first-child {
+.square:first-child {
     bottom: 118px;
     left: 230px;
     background-color: #8dc63f;
 }
 
-.squere:nth-child(2) {
+.square:nth-child(2) {
     bottom: 92px;
     left: 250px;
     background-color: #8dc63f;
 }
 
-.squere:nth-child(3) {
+.square:nth-child(3) {
     top: 212px;
     left: 290px;
     background-color: white;
 }
 
-.squere:nth-child(4) {
+.square:nth-child(4) {
     top: 170px;
     right: 230px;
     background-color: #8dc63f;
 }
 
-.squere:nth-child(5) {
+.square:nth-child(5) {
     bottom: 158px;
     right: 230px;
     background-color: #8dc63f;
 }
 
-.squere:nth-child(6) {
+.square:nth-child(6) {
     bottom: 126px;
     right: 260px;
     background-color: #8dc63f;
 }
 
-.squere:nth-child(7) {
+.square:nth-child(7) {
     bottom: 94px;
     right: 260px;
     background-color: white;
