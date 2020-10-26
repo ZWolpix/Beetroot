@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #e5eeee;
+}
+
+.container {
+    background-image: url("../img/body.png");
+    background-size: cover;
+    box-shadow: 0 28px 28px -18px #000000;
+    max-width:400px;
+    height: 500px;
+    margin: 50px auto 0;
+
+}
+
+.wrapper {
+    padding: 52px 72px 0;
+}
+
+a {
+    color: #b9b9cc;
+}
+
+.tab1 {
+    font-size: 18px;
+    font-weight: 700;
+    float: left;
+    margin-right: 20px;
+}
+
+.tab2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.content {
+    margin-top: 58px;
+}
+
+input[type="text"],input[type="password"] {
+    width: 260px;
+    height:40px;
+    font-size: 18px;
+    padding-left: 10px;
+    background: none;
+    outline: none;
+    border: 2px solid rgba(191, 185, 204, 0.54);
+    color: white;
+    margin-top: 4px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+input:invalid+.error {
+    visibility: visible;
+}
+
+label {
+    cursor: pointer;
+    color: white;
+}
+
+.field-name {
+    color: #fbf6e4;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+input:focus {
+    border-color: #23ae92;
+}
+
+.check-text {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+input[type="radio"] {
+    visibility: hidden;
+    width: 0;
+}
+
+input:first-child:checked ~ .content > div:last-child,
+input:nth-child(3):checked ~ .content > div:first-child {
+    display: none;
+}
+
+.btn {
+    margin: 42px 0 36px;
+    outline: none;
+    cursor: pointer;
+    background-color: #23ae92;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fbf6e4;
+    width: 100%;
+    padding: 9px;
+    border: 2px solid #23ae92;
+}
+
+.btn:focus {
+    border: 2px solid #e66a64;
+}
+
+.btn:hover {
+    background-color: #e66a64;
+}
+
+.choise {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    font-weight: 400;
+}
