@@ -1,0 +1,429 @@
+@import 'normalize.scss';
+
+@mixin font-pacifico {
+    font-family: 'Pacifico', cursive;
+}
+
+@mixin font-raleway {
+    font-family: 'Raleway', sans-serif;
+}
+
+$black_color: #262626;
+$white_color: #fff;
+$grey_color: #b9b9b9;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+}
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1551px) {
+    .body-wrapper {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+
+    .section-header .section-header__content .btn {
+        height: 50px;
+        width: 180px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
+    .section-header .section-header__content .btn {
+        height: 45px;
+        width: 160px;
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}*/
+
+.section-header {
+    background: url('../img/fresh.png') no-repeat;
+    background-position: center;
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    height: 100vh;
+
+
+
+    .section-inner {
+        padding: 50px 10% 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            font-size: 3.125rem;
+            @include font-pacifico;
+            color: $black_color;
+            line-height: 3.125rem;
+        }
+
+        .nav {
+            font-size: 1rem;
+            @include font-raleway;
+            font-weight: 700;
+            text-transform: uppercase;
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            li {
+                border: 10px solid transparent;
+            }
+
+            a {
+                text-decoration: none;
+                color: $black_color;
+            }
+
+            a:hover {
+                border-top: 2px solid #ff6033;
+                padding-top: 8px;
+                text-decoration: none;
+                color: $black_color;
+            }
+        }
+    }
+
+    &__content {
+        max-width: 370px;
+        margin-top: 260px;
+        color: $black_color;
+
+        .first-title {
+            font-size: 3.75rem;
+            @include font-raleway;
+            font-weight: 900;
+            line-height: 3.75rem;
+        }
+
+        &-text {
+            margin: 36px 0;
+        }
+
+        .btn {
+            text-transform: uppercase;
+            font-size: 1.25rem;
+            @include font-raleway;
+            font-weight: 300;
+            color: $white_color;
+            background-color: #ff6033;
+            height: 55px;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+    }
+
+    .scroll {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+    }
+}
+
+.text {
+    font-size: 1.06rem;
+    @include font-raleway;
+    font-weight: 300;
+}
+
+.title {
+    font-size: 5.625rem;
+    @include font-raleway;
+    font-weight: 700;
+    line-height: 5.625rem;
+}
+
+.section-about {
+    background-color: #00bbbb;
+    max-width: 1500px;
+    width: 100%;
+
+
+    .section-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 10% 60px;
+    }
+
+    &__img {
+        flex: 0 0 33.33%;
+        max-height: 600px;
+        margin-right: 6%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    &__content {
+        color: $white_color;
+        max-width: 504px;
+    }
+}
+
+.section-services {
+    background-color: #70bfff;
+    max-width: 1500px;
+    width: 100%;
+    max-height: 790px;
+
+    .section-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 10% 170px;
+    }
+
+    &__left {
+        width: 50%;
+    }
+
+    &__right {
+        color: $white_color;
+        background-image: url('../img/tomato.png');
+        background-repeat: no-repeat;
+        height: 530px;
+        width: 50%;
+        background-position: center;
+        display: flex;
+        align-items: center;
+    }
+}
+
+.section-gallery {
+    background-color: #ffe92f;
+    max-width: 1500px;
+    width: 100%;
+
+    .section-inner {
+        display: flex;
+        justify-content: center;
+        padding: 0 10% 0;
+    }
+
+    &__description {
+        max-width: 580px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.section-subscribe {
+    background: url('../img/blueberries.png') no-repeat;
+    background-position: center;
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    height: 50vh;
+
+    .section-inner {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 0 10% 0;
+        height: 100%;
+    }
+
+    &__wrapper {
+        flex-direction: column;
+        max-width: 770px;
+        width: 100%;
+    }
+
+    &__title {
+        font-size: 2.5rem;
+        @include font-raleway;
+        font-weight: 700;
+        line-height: 2.5rem;
+    }
+
+    .text {
+        max-width: 570px;
+        margin: 34px 0;
+    }
+
+    &__sub {
+        display: flex;
+        flex-direction: row;
+        max-width: 770px;
+        width: 100%;
+    }
+
+    input {
+        height: 60px;
+        max-width: 570px;
+        width: 100%;
+        margin-right: 30px;
+        padding: 0 16px 0;
+    }
+
+    .btn {
+        text-transform: uppercase;
+        font-size: 1.25rem;
+        @include font-raleway;
+        font-weight: 300;
+        color: $white_color;
+        background-color: #96b92c;
+        height: 60px;
+        width: 170px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.section-blog {
+    background-color: #b07cf7;
+    max-width: 1500px;
+    width: 100%;
+    color: $white_color;
+
+    .section-inner {
+        display: flex;
+        justify-content: center;
+        padding: 0 10% 0;
+    }
+
+    &__description {
+        max-width: 570px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.section-contact {
+    background: url('../img/footer-bg.png') no-repeat;
+    background-position: center;
+    position: relative;
+    max-width: 1500px;
+    width: 100%;
+    height: 100vh;
+
+
+
+    .section-inner {
+        padding: 50px 10% 0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+.section-footer {
+    background-color: #262626;
+    max-width: 1500px;
+    width: 100%;
+    color: $grey_color;
+
+    .section-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 10% 0;
+        height: 90px;
+    }
+
+    &__copyright {
+        font-size: 1rem;
+        @include font-raleway;
+        font-weight: 300;
+        line-height: 1rem;
+    }
+
+    &__logo {
+        font-size: 1.56rem;
+        @include font-pacifico;
+        line-height: 1.56rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: $grey_color;
+    }
+
+    &__autor {
+        font-size: 0.94rem;
+        @include font-raleway;
+        font-weight: 300;
+        line-height: 0.94rem;
+    }
+
+    &__love {
+        font-size: 0.94rem;
+        @include font-raleway;
+        font-weight: 700;
+        color: #ff2b58;
+        line-height: 0.94rem;
+    }
+
+    p,
+    span {
+        margin-bottom: 0;
+    }
+
+}
