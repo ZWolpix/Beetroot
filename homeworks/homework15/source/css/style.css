@@ -350,6 +350,11 @@ html {
   font-size: 16px;
 }
 
+@media screen and (min-width: 1551px) {
+  .body-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
 @media screen and (max-width: 992px) {
   html {
     font-size: 15px;
@@ -370,28 +375,33 @@ html {
     width: 160px;
   }
 }
-@media (max-width: 1500px) {
-  .section-outer {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+html,
+body {
+  width: 100%;
+  height: 100%;
 }
 
-.wrapper {
-  max-width: 1500px;
-  margin: 0 auto;
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+/*.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100%;
+}*/
 .section-header {
-  background: url("../img/fresh.png") no-repeat 50% 50%;
-  background-size: cover;
+  background: url("../img/fresh.png") no-repeat;
+  background-position: center;
   position: relative;
-}
-.section-header .section-inner {
+  max-width: 1500px;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  padding: 50px 6% 0;
+  padding: 50px 10% 0;
 }
 .section-header__top {
   display: flex;
@@ -462,7 +472,7 @@ html {
 }
 .section-header .scroll {
   position: absolute;
-  bottom: 70px;
+  bottom: 5%;
   left: 50%;
 }
 
@@ -481,20 +491,26 @@ html {
 
 .section-about {
   background-color: #00bbbb;
+  max-width: 1500px;
+  width: 100%;
 }
 .section-about .section-inner {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px 6% 60px;
+  padding: 60px 10% 60px;
 }
 .section-about__img {
-  height: 560px;
-  width: auto;
+  flex: 0 0 33.33%;
+  max-height: 600px;
   margin-right: 6%;
 }
 .section-about__img img {
+  width: 100%;
   height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
 }
 .section-about__content {
   color: #fff;
@@ -503,16 +519,131 @@ html {
 
 .section-services {
   background-color: #70bfff;
+  max-width: 1500px;
+  width: 100%;
+  max-height: 790px;
 }
-.section-services__img {
-  height: 530px;
-  width: auto;
-  padding: 100px 0 160px;
+.section-services .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 10% 170px;
 }
-.section-services img {
-  height: 100%;
+.section-services__left {
+  width: 50%;
 }
 .section-services__right {
   color: #fff;
+  background-image: url("../img/tomato.png");
+  background-repeat: no-repeat;
+  height: 530px;
+  width: 50%;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.section-subscribe {
+  background: url("../img/blueberries.png") no-repeat;
+  background-position: center;
   position: relative;
+  max-width: 1500px;
+  width: 100%;
+  height: 50vh;
+}
+.section-subscribe .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 10% 0;
+  height: 100%;
+}
+.section-subscribe__wrapper {
+  flex-direction: column;
+  max-width: 770px;
+  width: 100%;
+}
+.section-subscribe__title {
+  font-size: 2.5rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  line-height: 2.5rem;
+}
+.section-subscribe .text {
+  max-width: 570px;
+  margin: 34px 0;
+}
+.section-subscribe__sub {
+  display: flex;
+  flex-direction: row;
+  max-width: 770px;
+  width: 100%;
+}
+.section-subscribe input {
+  height: 60px;
+  max-width: 570px;
+  width: 100%;
+  margin-right: 30px;
+  padding: 0 16px 0;
+}
+.section-subscribe .btn {
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  background-color: #96b92c;
+  height: 60px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.section-footer {
+  background-color: #262626;
+  max-width: 1500px;
+  width: 100%;
+  color: #b9b9b9;
+}
+.section-footer .section-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10% 0;
+  height: 90px;
+}
+.section-footer__copyright {
+  font-size: 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 1rem;
+}
+.section-footer__logo {
+  font-size: 1.56rem;
+  font-family: "Pacifico", cursive;
+  line-height: 1.56rem;
+}
+.section-footer a {
+  text-decoration: none;
+  color: #b9b9b9;
+}
+.section-footer__autor {
+  font-size: 0.94rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  line-height: 0.94rem;
+}
+.section-footer__love {
+  font-size: 0.94rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  color: #ff2b58;
+  line-height: 0.94rem;
+}
+.section-footer p,
+.section-footer span {
+  margin-bottom: 0;
 }

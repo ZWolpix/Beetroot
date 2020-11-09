@@ -5,19 +5,17 @@
 
 body {
     background-color: #464f54;
-    height: 100vh;
     width: 100%;
 }
 
 .page {
-    height: 100vh;
     margin: 150px 16% 0 16%;
     background-color: #fff;
     padding: 200px 9% 1% 7%;
     max-width: 1060px;
 }
 
-.page:before{ 
+.page:before {
     content: " ";
     background: #e8eced;
     width: 2px;
@@ -26,7 +24,7 @@ body {
     margin-left: -40px;
     margin-top: -200px;
     padding: 0;
-    }
+}
 
 h3 {
     color: #b4b4b4;
@@ -73,7 +71,7 @@ p {
     width: 65%;
     display: inline-block;
     padding: 50px 0 0 62px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .title {
@@ -102,39 +100,39 @@ p {
     bottom: 27%;
     opacity: 0.5;
     right: 0;
-  }
+}
 
-  .edition {
+.edition {
     position: absolute;
     background-color: #fabf2d;
     height: 78px;
     width: 95%;
     right: 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.5);  
-  }
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
 
-  .buttons {
+.buttons {
     height: 100%;
     width: 660px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-  }
+}
 
 @font-face {
     font-family: 'ProximaNova-Regular';
     src: local('ProximaNova-Regular'),
-    url('../font/ProximaNova-Regular.svg') format('svg'), 
-    url('../font/ProximaNova-Regular.woff') format('woff'),
-    url('../font/ProximaNova-Regular.ttf') format('ttf'),
-    url('../font/ProximaNova-Regular.eot') format('eot');
+        url('../font/ProximaNova-Regular.svg') format('svg'),
+        url('../font/ProximaNova-Regular.woff') format('woff'),
+        url('../font/ProximaNova-Regular.ttf') format('ttf'),
+        url('../font/ProximaNova-Regular.eot') format('eot');
 }
 
 @font-face {
     font-family: 'FuturaPT-Heavy';
     src: local('FuturaPT-Heavy'),
-         url('../font/FuturaPT-Heavy.svg') format('svg'), 
-         url('../font/FuturaPT-Heavy.woff') format('woff'),
-         url('../font/FuturaPT-Heavy.ttf') format('ttf'),
-         url('../font/FuturaPT-Heavy.eot') format('eot');
-  }
+        url('../font/FuturaPT-Heavy.svg') format('svg'),
+        url('../font/FuturaPT-Heavy.woff') format('woff'),
+        url('../font/FuturaPT-Heavy.ttf') format('ttf'),
+        url('../font/FuturaPT-Heavy.eot') format('eot');
+}

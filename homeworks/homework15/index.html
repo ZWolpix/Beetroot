@@ -13,7 +13,8 @@
 
 <body>
 
-  <section class="section-outer section-header">
+  <div class="body-wrapper">
+  <section class="section-header">
     <div class="wrapper section-inner">
       <div class="section-header__top">
         <div class="logo">Cahee</div>
@@ -37,11 +38,11 @@
         </div>
         <button class="btn">Get free now</button>
         </div>
-        <a class="scroll" href="#"><img src="./source/img/scroll.png" alt="scroll"></a>
+        <a class="scroll" href="#about"><img src="./source/img/scroll.png" alt="scroll"></a>
     </div>
   </section>
 
-  <section class="section-outer section-about">
+  <section id="about" class="section-about">
     <div class="wrapper section-inner">
       <div class="section-about__img">
         <img src="./source/img/cup.png" alt="cup">
@@ -54,47 +55,62 @@
     </div>
   </section>
 
-  <section class="section-outer section-services">
+  <section class="section-services">
     <div class="wrapper section-inner">
+      <div class="section-services__left">
+        Online Shopping
+      </div>
       <div class="section-services__right">
         <h1 class="title">Our Services</h1>
-        <div class="section-services__img">
+        <!--<div class="section-services__img">
         <img src="./source/img/tomato.png" alt="tomato">
-      </div>
+      </div>-->
       </div>
     </div>
   </section>
 
-  <section class="section-outer section-gallery">
+  <section class="section-gallery">
     <div class="wrapper section-inner">
       section-gallery
     </div>
   </section>
 
-  <section class="section-outer section-subscribe">
-    <div class="wrapper section-inner">
-      section-subscribe
+  <section class="section-subscribe">
+    <div class="section-inner">
+      <div class="section-subscribe__wrapper">
+        <div class="section-subscribe__title">Subscribe To Us
+        </div>
+        <p class="text">Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        <div class="section-subscribe__sub">
+          <input type="text" placeholder="Your email address...">
+          <button class="btn">subscribe</button>
+        </div>
+      </div>
+      
     </div>
   </section>
 
-  <section class="section-outer section-blog">
+  <section class="section-blog">
     <div class="wrapper section-inner">
       section-blog
     </div>
   </section>
 
-  <section class="section-outer section-contact">
+  <section class="section-contact">
     <div class="wrapper section-inner">
       section-contact
     </div>
   </section>
 
-  <section class="section-outer section-footer">
+  <section class="section-footer">
     <div class="wrapper section-inner">
-      section-footer
+      <p class="section-footer__copyright">© 2015 Company. All right reserved.</p>
+      <a href="#"><h3 class="section-footer__logo">Cahee</h3></a>
+      <p class="section-footer__autor">Made with <span class="section-footer__love">love</span> by Auskteez</p>
     </div>
   </section>
 
+</div>
 </body>
 
 </html>
