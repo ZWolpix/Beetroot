@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+@import 'normalize.scss';
+
+@mixin josefinsans {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+@mixin aleo {
+    font-family: 'Aleo', serif;
+}
+
+$white_color: #fff;
+$grey_color: #999;
+$blue_color: #5474fd;
+$black_color: #000;
+
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    border: white solid 15px;
+}
+
+.body-wrapper {
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.header {
+    color: $white_color;
+    background: url('../img/rock_tonguage.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .content-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrapper {
+        text-align: center;
+        margin: 0 auto;
+
+        h1 {
+            @include josefinsans;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3rem;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        h3 {
+            @include josefinsans;
+            font-weight: 400;
+            font-size: 1.375rem;
+            line-height: 1.375rem;
+            margin: 18px 0 50px;
+        }
+    }
+
+    .search {
+        width: 650px;
+        position: relative;
+
+        &__text {
+            max-width: 650px;
+            display: flex;
+            align-items: center;
+
+            input {
+                border: none;
+                @include josefinsans;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1rem;
+                color: $black_color;
+                margin: 0;
+                padding: 23px 0;
+                text-align: center;
+                outline: none;
+                width: 100%;
+
+
+                &::placeholder {
+                    color: $grey_color;
+                    @include josefinsans;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 0.875rem;
+                }
+            }
+
+            .btn {
+                display: inline-block;
+                position: absolute;
+                right: 2px;
+
+                button {
+                    border: none;
+                    @include aleo;
+                    font-weight: 400;
+                    font-size: 0.875rem;
+                    line-height: 0.875rem;
+                    text-transform: uppercase;
+                    margin: 0;
+                    padding: 10px 14px 10px 34px;
+                    background-color: $blue_color;
+                    color: $white_color;
+                    outline: none;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #2b45b8;
+                    }
+
+                    .zoom {
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    a {
+        text-decoration: none;
+        color: $white_color;
+        @include josefinsans;
+        font-weight: 400;
+        font-size: 0.875rem;
+        line-height: 0.875rem;
+        position: absolute;
+        bottom: 20%;
+        left: 47%;
+    }
+
+    .scroll {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__between {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+
+.choose {
+    color: $white_color;
+    background: url('../img/castle.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .body-wrapper {
+        max-width: 1130px;
+        padding: 0 15px;
+        margin: 0 auto;
+
+
+        .menu {
+            height: 80px;
+            background-color: $blue_color;
+            width: 100%;
+            position: absolute;
+
+
+            &__wrapper {
+                height: 100%;
+                display: flex;
+                max-width: 1130px;
+                width: 100%;
+                padding: 0 15px;
+                justify-content: space-between;
+                align-items: center;
+
+                h4 {
+                    @include josefinsans;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                }
+
+                .nav {
+                    width: 47%;
+
+                    &__list {
+                        width: 100%;
+                        list-style-type: none;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        font-size: 0.88rem;
+                        text-transform: uppercase;
+                    }
+
+                    &__item {
+                        position: relative;
+                        overflow: hidden;
+                        line-height: 1.5rem;
+
+                        a {
+                            text-decoration: none;
+                            color: $white_color;
+                            @include aleo;
+                            font-weight: 400;
+                            font-size: 0.875rem;
+                            line-height: 0.875rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .content-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__wrapper {
+        width: 49%;
+        font-size: 36px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    h2 {
+        color: $white_color;
+        @include aleo;
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+
+    &__text {
+        color: $white_color;
+        @include josefinsans;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    &__pics {
+        width: 41%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__pics img:nth-child(2) {
+        align-self: flex-end;
+        padding-top: 5px;
+    }
+
+}
+
+.book {
+    background-color: #333;
+    position: relative;
+
+    .content-wrapper {
+        height: 50vh;
+    }
+
+    &__content {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .doit {
+        display: flex;
+        justify-content: center;
+        align-content: space-between;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        color: $white_color;
+        @include aleo;
+        font-weight: 400;
+        font-size: 2.25rem;
+        line-height: 2.25rem;
+    }
+}
+
+.first-option {
+    color: $white_color;
+    background: url('../img/house.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .content-wrapper {
+        height: 95vh;
+    }
+
+    &__wrapper {
+        width: 48%;
+        padding: 50px 35px;
+        background-color: rgba(35, 35, 35, 0.9);
+        position: absolute;
+        bottom: 15%;
+        max-width: 480px;
+        color: $white_color;
+    }
+
+    &__name {
+        @include josefinsans;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+    }
+
+    h3 {
+        @include josefinsans;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.25rem;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        @include josefinsans;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+}
+
+.second-option {
+    color: $white_color;
+    background: url('../img/water_rock.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .content-wrapper {
+        height: 95vh;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.reviews {
+    color: $white_color;
+    background: url('../img/man.png') no-repeat 50% 50%;
+    background-size: cover;
+    position: relative;
+
+    .content-wrapper {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+    }
+}
